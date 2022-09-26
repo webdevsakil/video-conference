@@ -3738,7 +3738,7 @@ xl device
 }
 /* Background Color */
 .gray-bg {
-  background: #333333;
+ background: rgba(245, 250, 255, 0.75);;
 }
 
 .light-gray-bg {

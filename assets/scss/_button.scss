@@ -1,0 +1,29 @@
+/* buttons */
+.button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding: 10px 17px;
+    text-decoration: none;
+}
+
+.button-primary {
+    background: #1374ec;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #0d59af79;
+
+    &:hover {
+        background: transparent;
+        color: #0d59af;
+    }
+}
+.transparent-btn{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #1374EC;
+    font-weight: 500;
+}

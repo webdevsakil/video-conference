@@ -66,19 +66,16 @@
                     &:hover{
                         color: #0D59AF;
                     }
+                    &.button-primary{
+                        color: #fff;
+                        &:hover{
+                            color: #262626;
+                        }
+                    }
                 }
             }
 
-            .button-primary {
-                background: #1374EC;
-                color: #fff;
-                border-radius: 6px;
-                border: 1px solid #0d59af79;
-                &:hover{
-                    background: transparent;
-                    color: #0D59AF;
-                }
-            }
+           
         }
     }
 }
