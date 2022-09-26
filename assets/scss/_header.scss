@@ -1,54 +1,92 @@
-.header-transparent{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, .5);
-    z-index: 999;;
-}
+.header-area {
 
-.header-area{
-    .main-menu{
-        ul{
-            li{
-                float: left;
-                a{
-                    font-family: 'Nunito Sans', sans-serif;
-                    font-size: 18px;
+    // logo area
+    .logo-area {
+        img {
+            width: 116px;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: capitalize;
+            color: #0D59AF;
+        }
+    }
+
+    // navbar
+    .primary-nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
                     line-height: 26px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    color: #046CF8;
-                    padding-left: 25px;
+                    font-weight: 400;
+                    color: #262626;
+                    text-transform: capitalize;
+                    display: inline-block;
+                    margin-left: 40px;
+                    min-height: 80px;
+                    line-height: 80px;
+                    vertical-align: middle;
+
                     &:hover {
-                        color: #046CF8;
+                        color: #0D59AF;
                     }
                 }
             }
         }
     }
-    .theme-btn{
-        padding-left: 50px;
-        a{
-            font-family: "Nunito Sans", sans-serif;
-            font-size: 18px;
-            line-height: 26px;
-            text-transform: capitalize;
-            color: #046CF8;
-            border: 1px solid #046CF8;
-            padding: 12px 41.17px;
-            border-radius: 30px;
-            i{
+
+    // header button
+    .header-btn-area {
+        .header-btn-list {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            min-height: 80px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #363636;
+                    display: inline-block;
+                    margin-left: 20px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: #0D59AF;
+                    }
+                }
+            }
+
+            .button-primary {
+                background: #1374EC;
                 color: #fff;
+                border-radius: 6px;
+                border: 1px solid #0d59af79;
+                &:hover{
+                    background: transparent;
+                    color: #0D59AF;
+                }
             }
         }
     }
 }
+// transparent header
 
-/** mobile menu **/
-.mean-container a.meanmenu-reveal span {
-	display: block;
-	background: red;
-	height: 3px;
-	margin-top: 3px;
+.header-transparent{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
