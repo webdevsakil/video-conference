@@ -1,5 +1,5 @@
 /* buttons */
-.button {
+.theme-btn {
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-.button-primary {
+.theme-btn-primary {
     background: #1374ec;
     color: #fff;
     border-radius: 6px;
@@ -26,4 +26,15 @@
     text-transform: capitalize;
     color: #1374EC;
     font-weight: 500;
+}
+.theme-rounded-btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(19, 116, 236, 0.8);
+    text-decoration: none;
+    background:#75c7b822;
+    padding: 3px 60px;
+    border-radius: 22px;
+    
 }

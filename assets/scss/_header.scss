@@ -2,17 +2,11 @@
 
     // logo area
     .logo-area {
-        img {
-            width: 116px;
-            height: auto;
-        }
-
         a {
-            text-decoration: none;
-            font-size: 22px;
-            font-weight: 500;
-            text-transform: capitalize;
-            color: #0D59AF;
+            img {
+                width: 116px;
+                height: auto;
+            }
         }
     }
 
@@ -63,25 +57,29 @@
                     margin-left: 20px;
                     font-weight: 600;
                     text-transform: capitalize;
-                    &:hover{
+
+                    &:hover {
                         color: #0D59AF;
                     }
-                    &.button-primary{
+
+                    &.theme-btn-primary {
                         color: #fff;
-                        &:hover{
+
+                        &:hover {
                             color: #262626;
                         }
                     }
                 }
             }
 
-           
+
         }
     }
 }
+
 // transparent header
 
-.header-transparent{
+.header-transparent {
     position: relative;
     top: 0;
     left: 0;

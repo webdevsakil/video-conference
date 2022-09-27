@@ -9,16 +9,9 @@
 1. header
 */
 /*-- sections --*/
-.header-area .logo-area img {
+.header-area .logo-area a img {
   width: 116px;
   height: auto;
-}
-.header-area .logo-area a {
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: #0D59AF;
 }
 .header-area .primary-nav ul {
   display: flex;
@@ -60,10 +53,10 @@
 .header-area .header-btn-area .header-btn-list li a:hover {
   color: #0D59AF;
 }
-.header-area .header-btn-area .header-btn-list li a.button-primary {
+.header-area .header-btn-area .header-btn-list li a.theme-btn-primary {
   color: #fff;
 }
-.header-area .header-btn-area .header-btn-list li a.button-primary:hover {
+.header-area .header-btn-area .header-btn-list li a.theme-btn-primary:hover {
   color: #262626;
 }
 
@@ -94,7 +87,7 @@
 .hero-slider .hero-left-area .hero-title {
   margin-top: -30px;
 }
-.hero-slider .hero-left-area .hero-btn-area a.button {
+.hero-slider .hero-left-area .hero-btn-area a.theme-btn {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
@@ -179,7 +172,7 @@
   padding: 0px 20px;
 }
 
-.features-area .features-left .features-top span {
+.features-area .features-left .features-top span, .features-area .features-right .features-top span {
   display: inline-block;
   font-size: 16px;
   line-height: 26px;
@@ -227,10 +220,39 @@
   color: #2C8AFF;
   letter-spacing: 0.05em;
 }
+.features-area .featurs-img-area {
+  position: relative;
+}
+.features-area .feature-card {
+  position: absolute;
+  bottom: -60px;
+  left: 40%;
+  border-radius: 21px;
+  filter: drop-shadow(1.78px, 1.78px rgba(0, 0, 0, 0.04));
+  box-shadow: 2px 2px 1px 3px rgba(128, 128, 128, 0.168);
+}
+.features-area .feature-card .features-card-list ul {
+  display: flex;
+  align-items: center;
+}
+.features-area .feature-card .features-card-list ul li {
+  font-size: 14px;
+  line-height: 24px;
+  color: #6d6d6d;
+}
+.features-area .features-bottom-img-area {
+  position: relative;
+}
+.features-area .features-bottom-img-area .right-bottom-img {
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
+  z-index: 887;
+}
 
 /*-- components -- */
 /* buttons */
-.button {
+.theme-btn {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
@@ -240,13 +262,13 @@
   text-decoration: none;
 }
 
-.button-primary {
+.theme-btn-primary {
   background: #1374ec;
   color: #fff;
   border-radius: 6px;
   border: 1px solid rgba(13, 89, 175, 0.4745098039);
 }
-.button-primary:hover {
+.theme-btn-primary:hover {
   background: transparent;
   color: #0d59af;
 }
@@ -257,6 +279,17 @@
   text-transform: capitalize;
   color: #1374EC;
   font-weight: 500;
+}
+
+.theme-rounded-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(19, 116, 236, 0.8);
+  text-decoration: none;
+  background: rgba(117, 199, 184, 0.1333333333);
+  padding: 3px 60px;
+  border-radius: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

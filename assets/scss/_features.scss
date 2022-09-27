@@ -1,5 +1,5 @@
 .features-area {
-    .features-left {
+    .features-left,.features-right {
         .features-top {
             span {
                 display: inline-block;
@@ -52,13 +52,50 @@
         p {
             color: #6D6D6D;
         }
+
         padding-left: 78px;
-        a{
+
+        a {
             text-decoration: none;
             font-size: 16px;
             line-height: 26px;
             color: #2C8AFF;
             letter-spacing: 0.05em;
+        }
+    }
+
+    .featurs-img-area {
+        position: relative;
+    }
+
+    .feature-card {
+        position: absolute;
+        bottom: -60px;
+        left: 40%;
+        border-radius: 21px;
+        filter: drop-shadow(1.78px,
+                1.78px rgba(0, 0, 0, 0.04));
+        box-shadow: 2px 2px 1px 3px rgba(128, 128, 128, 0.168);
+        .features-card-list {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #6d6d6d;
+                }
+            }
+        }
+    }
+    .features-bottom-img-area{
+        position: relative;
+        .right-bottom-img{
+            position: absolute;
+            bottom: -160px;
+            right: 0px;
+            z-index: 887;
         }
     }
 }
