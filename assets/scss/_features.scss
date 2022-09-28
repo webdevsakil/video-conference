@@ -1,5 +1,7 @@
 .features-area {
-    .features-left,.features-right {
+
+    .features-left,
+    .features-right {
         .features-top {
             span {
                 display: inline-block;
@@ -64,18 +66,20 @@
         }
     }
 
-    .featurs-img-area {
+    .features-img-wrapper {
         position: relative;
     }
 
     .feature-card {
         position: absolute;
         bottom: -60px;
-        left: 40%;
-        border-radius: 21px;
+        right: 20%;
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
         filter: drop-shadow(1.78px,
                 1.78px rgba(0, 0, 0, 0.04));
         box-shadow: 2px 2px 1px 3px rgba(128, 128, 128, 0.168);
+
         .features-card-list {
             ul {
                 display: flex;
@@ -89,13 +93,78 @@
             }
         }
     }
-    .features-bottom-img-area{
+
+    .features-bottom-img-area {
         position: relative;
-        .right-bottom-img{
+
+        .right-bottom-img {
             position: absolute;
             bottom: -160px;
-            right: 0px;
+            right: 10px;
             z-index: 887;
         }
+
+        .active-chat-card {
+            position: absolute;
+            top: 100px;
+            right: 70px;
+
+            .active-chat {
+                line-height: 22px;
+                text-transform: capitalize;
+                border-radius: 25px;
+
+                span {
+                    display: inline-block;
+                    background: #fff;
+                    line-height: 28px;
+                    color: #6BADFF;
+                    width: 45px;
+                    height: 28px;
+                    font-weight: 700;
+                    border-radius: 25px;
+                    text-transform: capitalize;
+                    text-align: center;
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        .features-shadow-img {
+            position: absolute;
+            top: -40px;
+            left: -40px;
+            z-index: -29;
+        }
+
     }
+}
+
+@media all and (min-width:320px) and (max-width:575px) {
+    .features-area .section-title h2 {
+        padding-right: 0px;
+    }
+
+    .features-area .features-bottom-img-area .right-bottom-img {
+        right: -70px;
+    }
+
+}
+
+@media all and (min-width:576px) and (max-width:767px) {
+    .features-area .section-title h2 {
+        padding-right: 0px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:992px) {
+
+    .features-area .featurs-img-area {
+        margin-left: 80px;
+    }
+
+    .features-area .section-title h2 {
+        padding-right: 0px;
+    }
+
 }

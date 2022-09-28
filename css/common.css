@@ -7,6 +7,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .img {
@@ -175,3 +176,44 @@ label {
   opacity: 1;
 }
 
+/* background */
+.gray-bg{
+  background: #F5FAFF;
+}
+.bg-green {
+  background: #75c7b8;
+}
+.bg-footer {
+  background: #091a30;
+}
+/* color */
+.text-white,
+.text-white p {
+  color: #fff;
+}
+.text-dark {
+  color: #1f1f1f;
+}
+.text-gray {
+  color: #646464;
+}
+
+/* media  */
+
+@media all and (min-width: 300px) and (max-width: 575px) {
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h2{
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}

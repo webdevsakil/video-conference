@@ -85,3 +85,105 @@
     left: 0;
     width: 100%;
 }
+
+// mobile menu
+.header-area {
+    position: relative;
+
+    .open-menu-btn {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+
+        button {
+            background: transparent;
+            border: none;
+            font-size: 28px;
+        }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 350px;
+    background: #fff;
+    padding-top: 40px;
+    box-shadow: 2px 2px 4px 1px rgba(128, 128, 128, 0.353);
+    transform: translateX(-100%);
+    transition: all ease-in-out 0.4s;
+
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        ul {
+            li {
+                border-bottom: 1px solid #2626260d;
+
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #262626;
+                    text-transform: capitalize;
+                    padding: 5px 0px;
+                }
+            }
+        }
+    }
+
+    .close-btn {
+        background: transparent;
+        border: none;
+        font-size: 25px;
+        margin-top: 5px;
+        color: #0d59af79;
+    }
+}
+
+.show-mobile-menu {
+    transform: translateX(0%);
+    transition: all ease-in 0.4s;
+}
+
+body.bg-gray {
+    background: #2626261f;
+}
+
+/* media for menu */
+@media all and (max-width:991px) {
+    .header-area {
+        .header-btn-area {
+            .header-btn-list {
+                padding-right: 50px;
+            }
+        }
+    }
+}
+
+@media all and (min-width:320px) and (max-width:470px) {
+    .header-area {
+        .open-menu-btn {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+        }
+
+        .header-btn-area {
+            .header-btn-list {
+                li a {
+                    font-size: 12px;
+                    margin-left: 15px;
+                }
+
+                .theme-btn {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
