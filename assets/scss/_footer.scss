@@ -37,7 +37,8 @@
                 font-size: 20px;
                 background: #1374EC;
                 color: #fff;
-                &:hover{
+
+                &:hover {
                     opacity: 0.7;
                 }
             }
@@ -47,8 +48,9 @@
         ul {
             margin-top: 25px;
             display: flex;
-            li{
-                a{
+
+            li {
+                a {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -59,7 +61,8 @@
                     color: #fff;
                     text-decoration: none;
                     margin-right: 14px;
-                    &:hover{
+
+                    &:hover {
                         background: #fff;
                         color: #052349;
                     }
@@ -67,18 +70,22 @@
             }
         }
     }
-    .footer-nav-area{
-        h2{
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 700;
-            color: #fff;
-            text-transform: capitalize;
+
+    .footer-right-area {
+        .footer-title {
+            h2 {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 700;
+                color: #fff;
+                text-transform: capitalize;
+            }
         }
-        nav{
-            ul{
-                li{
-                    a{
+
+        .footer-nav {
+            ul {
+                li {
+                    a {
                         font-size: 16px;
                         line-height: 28px;
                         color: #fff;
@@ -87,7 +94,8 @@
                         text-decoration: none;
                         margin-top: 12px;
                         display: inline-block;
-                        &:hover{
+
+                        &:hover {
                             opacity: 0.7;
                         }
                     }
@@ -95,27 +103,30 @@
             }
         }
     }
+
     // copyright
-    .copyright{
-        p{
+    .copyright {
+        p {
             color: #fff;
             text-transform: capitalize;
         }
     }
 }
 
-@media all and (min-width:320px) and (max-width:575px){
+@media all and (min-width:320px) and (max-width:575px) {
     .footer-area .footer-nav-area h2 {
-           margin-top: 30px;
-        }
+        margin-top: 30px;
+    }
 }
-@media all and (min-width:576px) and (max-width:767px){
+
+@media all and (min-width:576px) and (max-width:767px) {
     .footer-area .footer-nav-area h2 {
-           margin-top: 30px;
-        }
+        margin-top: 30px;
+    }
 }
-@media all and (min-width:768px) and (max-width:991px){
+
+@media all and (min-width:768px) and (max-width:991px) {
     .footer-area .footer-nav-area h2 {
-           margin-top: 30px;
-        }
+        margin-top: 30px;
+    }
 }

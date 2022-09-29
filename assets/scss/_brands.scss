@@ -1,9 +1,13 @@
-.brands-area{
-    .brands-slider{
-        ul{
+.brands-area {
+    .brands-slider {
+        ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+    }
+
+    .slick-slide {
+        margin: 0 20px;
     }
 }
