@@ -383,6 +383,9 @@ body.bg-gray {
   .features-area .features-bottom-img-area .right-bottom-img {
     right: -70px;
   }
+  .features-area .features-bottom-img-area .active-chat-card {
+    right: -20px;
+  }
 }
 @media all and (min-width: 576px) and (max-width: 767px) {
   .features-area .section-title h2 {
